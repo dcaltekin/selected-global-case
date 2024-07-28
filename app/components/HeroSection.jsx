@@ -1,5 +1,5 @@
 import React from "react";
-import { Heart, SeeAll, Share } from "../lib/icons";
+import { Area, Floor, Heart, House, Phone, SeeAll, Share } from "../lib/icons";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -65,6 +65,45 @@ export default function HeroSection() {
             </button>
           </div>
         </div>
+      </div>
+      <div className="mt-[24px] flex justify-between">
+        <div className="font-medium">
+          <div className="text-[#00145C] text-[20px]">Sakarya, Famagusta</div>
+          <div className="mt-[24px] text-[#6C727F]">
+            Listing date: 02.03.2024
+          </div>
+        </div>
+        <div className="font-medium">
+          <div className="text-[#00145C] text-[28px] text-right">600 £</div>
+          <div className="mt-[24px] text-[#6C727F]">TRY 24,603.58</div>
+        </div>
+      </div>
+      <div className="flex justify-between">
+        <div className="w-[540px] pb-24 mt-[29px]">
+          <div className="bg-[#EFEFFB] w-[540px] h-[1.5px]"></div>
+          <div className="py-[24px] grid grid-cols-3 place-items-center">
+            <div className="flex flex-col gap-y-[12px] items-center -tracking-[4%]">
+              <House />
+              <p className="text-[#00145C] font-medium">Rooms</p>
+              <p className="text-[#878787]">2+1</p>
+            </div>
+            <div className="flex flex-col gap-y-[12px] items-center -tracking-[4%]">
+              <Area />
+              <p className="text-[#00145C] font-medium">Closed Area</p>
+              <p className="text-[#878787]">180m2</p>
+            </div>
+            <div className="flex flex-col gap-y-[12px] items-center -tracking-[4%]">
+              <Floor />
+              <p className="text-[#00145C] font-medium">Floor Level</p>
+              <p className="text-[#878787]">2</p>
+            </div>
+          </div>
+          <div className="bg-[#EFEFFB] w-[540px] h-[1.5px]"></div>
+        </div>
+        <button className="bg-[#00145C] rounded-[8px] text-white w-[255px] py-[9px] h-[48px] mt-[24px] flex gap-x-[8px] justify-center items-center">
+          <Phone />
+          Contact Now
+        </button>
       </div>
     </div>
   );
