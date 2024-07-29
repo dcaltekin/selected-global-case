@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.swiper .swiper-pagination-bullet {
+    background: #00145C !important;
+}
+  
+.swiper .swiper-pagination-bullet-active {
+    background: #FFFFFF !important;
+}

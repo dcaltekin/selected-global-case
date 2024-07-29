@@ -394,3 +394,98 @@ export function Hamburger() {
     </svg>
   );
 }
+
+export function HeartMobile() {
+  return (
+    <svg
+      width="15"
+      height="14"
+      viewBox="0 0 15 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8.17417 12.1392C7.97584 12.2092 7.64917 12.2092 7.45084 12.1392C5.75917 11.5617 1.97917 9.15252 1.97917 5.06918C1.97917 3.26668 3.43167 1.80835 5.2225 1.80835C6.28417 1.80835 7.22334 2.32168 7.8125 3.11502C8.40167 2.32168 9.34667 1.80835 10.4025 1.80835C12.1933 1.80835 13.6458 3.26668 13.6458 5.06918C13.6458 9.15252 9.86584 11.5617 8.17417 12.1392Z"
+        stroke="#00145C"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ShareMobile() {
+  return (
+    <svg
+      width="15"
+      height="14"
+      viewBox="0 0 15 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.06249 3.5L7.81249 1.75M7.81249 1.75L9.56249 3.5M7.81249 1.75V7.58333M4.89596 5.83333C4.35236 5.83333 4.08056 5.83333 3.86617 5.92214C3.5803 6.04055 3.35305 6.2678 3.23464 6.55367C3.14583 6.76807 3.14583 7.03973 3.14583 7.58333V10.3833C3.14583 11.0367 3.14583 11.3632 3.27299 11.6128C3.38484 11.8323 3.56319 12.0111 3.78271 12.123C4.03203 12.25 4.35857 12.25 5.01069 12.25H10.6146C11.2667 12.25 11.5928 12.25 11.8421 12.123C12.0616 12.0111 12.2403 11.8323 12.3521 11.6128C12.4792 11.3634 12.4792 11.0373 12.4792 10.3851V7.58333C12.4792 7.03974 12.4791 6.76807 12.3903 6.55367C12.2719 6.2678 12.0448 6.04055 11.759 5.92214C11.5446 5.83333 11.2728 5.83333 10.7292 5.83333"
+        stroke="#00145C"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ArrowLeft() {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_1_6094)">
+        <path
+          d="M7.75 2.75L4.25 6.25L7.75 9.75"
+          stroke="#00145C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_6094">
+          <rect width="12" height="12" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function ArrowRight() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 17 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_1_6156)">
+        <path
+          d="M5.88281 13.166L10.5495 8.49935L5.88281 3.83268"
+          stroke="#00145C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_6156">
+          <rect
+            width="14"
+            height="14"
+            fill="white"
+            transform="translate(0.210938 0.5)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}

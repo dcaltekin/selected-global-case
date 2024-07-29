@@ -36,13 +36,19 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className="container mx-auto py-[20px] flex justify-between items-center px-4 md:px-0">
+    <div
+      className={
+        isOpen
+          ? "container mx-auto py-[20px] flex justify-between items-center px-4 lg:px-0 sticky top-0 z-[50]"
+          : "container mx-auto py-[20px] flex justify-between items-center px-4 lg:px-0"
+      }
+    >
       <Image
         src="/logo.svg"
         width={180}
         height={28}
         alt="logo"
-        className="static z-50"
+        className="static z-[60]"
       />
       <ul className="text-[14px] text-[#00145C] hidden lg:flex gap-x-[36px]">
         {navbarElements.map((element) => (
@@ -57,7 +63,7 @@ export default function Navbar() {
         ))}
       </ul>
 
-      <div className="flex gap-x-[24px] items-center static z-50">
+      <div className="flex gap-x-[24px] items-center static z-[60]">
         <BritishFlag />
 
         <div className="bg-[#E0DEF7] h-[40px] w-[1px]"></div>
@@ -70,8 +76,8 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="absolute  lg:hidden z-40 inset-0 bg-gray-400 text-white py-4 pt-24 flex flex-col   h-screen px-4 md:px-0">
-          <ul className="text-[14px] text-white flex flex-col gap-y-4 container mx-auto">
+        <div className="fixed lg:hidden inset-0 bg-gray-400 text-white py-4 pt-24 flex flex-col h-screen px-4 lg:px-0 z-50  ">
+          <ul className="text-[14px] flex flex-col gap-y-4 container mx-auto px-4 lg:px-0">
             {navbarElements.map((element) => (
               <li
                 key={element.id}
