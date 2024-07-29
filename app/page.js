@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection";
 import VideoComp from "./components/VideoComp";
 import AboutProperty from "./components/AboutProperty";
 import Location from "./components/Location";
+import Subscribe from "./components/Subscribe";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <VideoComp />
       <AboutProperty />
       <Location />
+      <Subscribe />
     </>
   );
 }

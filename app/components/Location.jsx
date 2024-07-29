@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Location() {
   return (
-    <div className="container mx-auto mt-[24px] px-4 lg:px-0 pb-96">
+    <div className="container mx-auto mt-[24px] px-4 lg:px-0 ">
       <div className="flex flex-col md:flex-row gap-y-[24px] justify-between md:items-center">
         <h1 className="text-[#00145C] text-[20px] font-medium -tracking-[4%]">
           Location
