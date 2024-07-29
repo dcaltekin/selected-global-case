@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Breadcrumb() {
   return (
-    <div className="container mx-auto mt-[24px] flex gap-x-[12px] text-[12px] text-[#6C727F] font-medium">
+    <div className="container mx-auto mt-[24px] hidden md:flex gap-x-[12px] text-[12px] text-[#6C727F] font-medium px-4 md:px-0">
       <div>Home</div>
       <div>-</div>
       <div>Property</div>
