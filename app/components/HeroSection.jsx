@@ -210,7 +210,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="flex flex-col md:flex-row justify-between">
-        <div className="w-full md:w-[345px] lg:w-[540px] pb-24 mt-[29px] order-last md:order-first">
+        <div className="w-full md:w-[345px] lg:w-[540px]  mt-[29px] order-last md:order-first">
           <div className="bg-[#EFEFFB] w-full md:w-[345px] lg:w-[540px] h-[1.5px]"></div>
           <div className="py-[24px] grid grid-cols-2 xl:grid-cols-3 place-items-center gap-y-4">
             <div className="flex flex-col gap-y-[12px] items-center -tracking-[4%]">
