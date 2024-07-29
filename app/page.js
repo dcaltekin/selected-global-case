@@ -4,6 +4,7 @@ import Breadcrumb from "./components/Breadcrumb";
 import HeroSection from "./components/HeroSection";
 import VideoComp from "./components/VideoComp";
 import AboutProperty from "./components/AboutProperty";
+import Location from "./components/Location";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <VideoComp />
       <AboutProperty />
+      <Location />
     </>
   );
 }

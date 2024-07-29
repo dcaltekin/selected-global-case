@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutProperty() {
   return (
-    <div className="container mx-auto mt-[24px] pb-48 px-4 lg:px-0">
+    <div className="container mx-auto mt-[24px]  px-4 lg:px-0">
       <h1 className="text-[#00145C] text-[20px] font-medium -tracking-[4%]">
         About property
       </h1>
