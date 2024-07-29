@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Subscribe() {
   return (
-    <div className="container mx-auto mt-[50px] px-4 lg:px-0 flex flex-col gap-y-[24px] max-w-[445px] pb-24">
+    <div className="container mx-auto mt-[50px] px-4 lg:px-0 flex flex-col gap-y-[24px] max-w-[445px] ">
       <h1 className="text-[#00145C] text-center text-[22px] font-medium">
         Don't Miss The Latest Updates And Campaigns
       </h1>
