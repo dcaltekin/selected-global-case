@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ArrowRightSeeAll, HeartProjects } from "../lib/icons";
+import { ArrowRightSeeAll } from "../lib/icons";
 import Image from "next/image";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";

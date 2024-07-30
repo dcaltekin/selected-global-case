@@ -3,7 +3,6 @@ import React, { useState, useRef } from "react";
 import {
   Area,
   ArrowLeft,
-  ArrowRight,
   Floor,
   Heart,
   HeartMobile,
@@ -33,14 +32,15 @@ export default function HeroSection() {
     }
   };
 
-  const goToNextSlide = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext();
-    }
-  };
+  // const goToNextSlide = () => {
+  //   if (swiperRef.current) {
+  //     swiperRef.current.slideNext();
+  //   }
+  // };
 
   const imageData = [
     {
+      id: 1,
       src: "/bg.jpg",
       width: 566,
       height: 450,
@@ -49,6 +49,7 @@ export default function HeroSection() {
       rowSpan: 2,
     },
     {
+      id: 2,
       src: "/bg2.jpg",
       width: 268,
       height: 223,
@@ -57,6 +58,7 @@ export default function HeroSection() {
       rowSpan: 1,
     },
     {
+      id: 3,
       src: "/bg4.jpg",
       width: 268,
       height: 223,
@@ -65,6 +67,7 @@ export default function HeroSection() {
       rowSpan: 1,
     },
     {
+      id: 4,
       src: "/bg3.jpg",
       width: 268,
       height: 223,
@@ -73,6 +76,7 @@ export default function HeroSection() {
       rowSpan: 1,
     },
     {
+      id: 5,
       src: "/bg5.jpg",
       width: 268,
       height: 223,
@@ -109,8 +113,8 @@ export default function HeroSection() {
             onSlideChange={handleSlideChange}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
-            {imageData.map((image, index) => (
-              <SwiperSlide key={index}>
+            {imageData.map((image) => (
+              <SwiperSlide key={image.id}>
                 <div className="relative">
                   <Image
                     src={image.src}
@@ -134,7 +138,7 @@ export default function HeroSection() {
           {/* Şimdilik slider kontrol butonu olarak aktif ettim. */}
           <button
             onClick={goToPreviousSlide}
-            className=" absolute z-[40] top-[16px] left-4 xs:left-20 flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]"
+            className=" absolute z-[40] top-[20px] left-4 xs:left-20 flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]"
           >
             <ArrowLeft />
           </button>
