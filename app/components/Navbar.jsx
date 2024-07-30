@@ -76,7 +76,7 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="fixed lg:hidden inset-0 bg-gray-400 text-white py-4 pt-24 flex flex-col h-screen px-4 lg:px-0 z-50  ">
+        <div className="fixed lg:hidden inset-0 bg-white text-black py-4 pt-24 flex flex-col h-screen px-4 lg:px-0 z-50  ">
           <ul className="text-[14px] flex flex-col gap-y-4 container mx-auto px-4 lg:px-0">
             {navbarElements.map((element) => (
               <li
