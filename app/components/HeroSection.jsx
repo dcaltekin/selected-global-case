@@ -123,18 +123,18 @@ export default function HeroSection() {
                     alt={image.alt}
                     className="object-cover w-full h-[394px]"
                   />
-                  <div className="flex md:hidden gap-x-[10px] absolute top-[20px] right-[16px]">
-                    <div className=" flex items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]">
-                      <ShareMobile />
-                    </div>
-                    <div className=" flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]">
-                      <HeartMobile />
-                    </div>
-                  </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className="flex md:hidden gap-x-[10px] absolute top-[20px] z-[40] right-[16px] xs:right-[72px]">
+            <div className=" flex items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]">
+              <ShareMobile />
+            </div>
+            <div className=" flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]">
+              <HeartMobile />
+            </div>
+          </div>
           {/* Şimdilik slider kontrol butonu olarak aktif ettim. */}
           <button
             onClick={goToPreviousSlide}
@@ -148,7 +148,7 @@ export default function HeroSection() {
           >
             <ArrowRight />
           </button> */}
-          <button className="flex md:hidden absolute top-[320px] right-8 xs:right-20  z-[40] bg-white rounded-[8px] w-[70px] justify-center text-[#00145C] text-[14px] -tracking-[4%] py-[6px] px-[27px]  gap-x-[6px] items-center">
+          <button className="flex md:hidden absolute top-[320px] right-4 xs:right-[70px]  z-[40] bg-white rounded-[8px] w-[70px] justify-center text-[#00145C] text-[14px] -tracking-[4%] py-[6px] px-[27px]  gap-x-[6px] items-center">
             {currentSlide}/{imageData.length}
           </button>
           <button className="hidden md:flex absolute bottom-8 right-[17%] transform translate-x-[20%] z-40 bg-white rounded-[8px] w-[210px] justify-center text-[#00145C] text-[14px] -tracking-[4%] py-[9px] px-[27px]  gap-x-[6px] items-center">

@@ -55,7 +55,7 @@ export default function Footer() {
             <LinkedinIcon />
           </div>
         </div>
-        <div className="bg-[#EFEFFB] w-full  h-[1.5px]  mt-[100px]"></div>
+        <div className="bg-[#EFEFFB] w-full  h-[1.5px]  mt-[50px] md:mt-[100px]"></div>
         <div className="flex flex-col md:flex-row gap-y-[50px] justify-between mt-[40px]">
           <div className="flex gap-x-[30px] -tracking-[0.9px]">
             <Link
