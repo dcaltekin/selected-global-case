@@ -12,6 +12,7 @@ export default function SimilarProjects() {
   const toggleHeart = (id) => {
     setFilledHearts((prev) => ({ ...prev, [id]: !prev[id] }));
   };
+
   const projects = [
     {
       id: 1,
@@ -47,7 +48,7 @@ export default function SimilarProjects() {
     },
   ];
   return (
-    <div className="container mx-auto mt-[24px]">
+    <div className="container mx-auto mt-[24px] px-4 lg:px-0">
       <div className="flex justify-between items-center">
         <h1 className="text-[#00145C] text-[20px] font-medium -tracking-[4%]">
           Similar Projects
@@ -57,7 +58,73 @@ export default function SimilarProjects() {
           <ArrowRightSeeAll />
         </button>
       </div>
-      <div className="grid grid-cols-4 gap-x-[30px] mt-[24px]">
+      <div className="grid md:grid-cols-2 lg:hidden gap-y-[25px] gap-x-[30px] mt-[24px] ">
+        {projects.slice(0, 2).map((project) => (
+          <div
+            key={project.id}
+            className="relative w-full cursor-pointer rounded-[8px] overflow-hidden group "
+          >
+            <Swiper
+              slidesPerView={1}
+              pagination={{ clickable: true }}
+              modules={[Pagination]}
+              className="mySwiper rounded-[8px] overflow-hidden"
+              loop
+            >
+              {project.images.map((image) => (
+                <SwiperSlide key={image.id}>
+                  <Image
+                    src={image}
+                    width={255}
+                    height={232}
+                    alt="project image"
+                    className="w-full object-cover scale-100 hover:scale-110 transition-all duration-500 h-[232px] "
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <button
+              onClick={() => toggleHeart(project.id)}
+              className="absolute z-[100] top-4 right-4 w-[32px] h-[32px] rounded-full bg-white flex justify-center items-center "
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 17 16"
+                xmlns="http://www.w3.org/2000/svg"
+                className={`transition-colors duration-300 ${
+                  filledHearts[project.id]
+                    ? "fill-current text-blue-900"
+                    : "fill-none"
+                }`}
+              >
+                <path
+                  d="M9.35087 13.8733C9.12421 13.9533 8.75087 13.9533 8.52421 13.8733C6.59087 13.2133 2.27087 10.46 2.27087 5.79335C2.27087 3.73335 3.93087 2.06668 5.97754 2.06668C7.19087 2.06668 8.26421 2.65335 8.93754 3.56001C9.61087 2.65335 10.6909 2.06668 11.8975 2.06668C13.9442 2.06668 15.6042 3.73335 15.6042 5.79335C15.6042 10.46 11.2842 13.2133 9.35087 13.8733Z"
+                  stroke="#00145C"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            <div className="flex flex-col gap-y-[13px] leading-[100%]">
+              <div className="mt-[13px] text-[#008DB9] font-bold">
+                {project.price}
+              </div>
+              <div className="text-[#00145C] font-medium text-[13px]">
+                {project.title}
+              </div>
+              <div className="text-[12px] text-[#6C727F] font-medium">
+                {project.location}
+              </div>
+              <div className="text-[#6C727F] font-medium text-[12px]">
+                {project.details}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className=" hidden lg:grid grid-cols-4 gap-x-[30px] mt-[24px] ">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -70,8 +137,8 @@ export default function SimilarProjects() {
               className="mySwiper rounded-[8px] overflow-hidden"
               loop
             >
-              {project.images.map((image, index) => (
-                <SwiperSlide key={index}>
+              {project.images.map((image) => (
+                <SwiperSlide key={image.id}>
                   <Image
                     src={image}
                     width={255}

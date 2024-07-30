@@ -6,6 +6,7 @@ import {
   MailFooter,
   PhoneFooter,
 } from "../lib/icons";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -57,15 +58,22 @@ export default function Footer() {
         <div className="bg-[#EFEFFB] w-full  h-[1.5px]  mt-[100px]"></div>
         <div className="flex flex-col md:flex-row gap-y-[50px] justify-between mt-[40px]">
           <div className="flex gap-x-[30px] -tracking-[0.9px]">
-            <button className="px-4 md:px-[22px] py-[7px] rounded-[8px] text-[#00145C] text-[12px] flex gap-x-[6px] border-[1px] border-[#E0DEF7]">
+            <Link
+              href="tel:905391144525"
+              className="px-4 md:px-[22px] py-[7px] rounded-[8px] text-[#00145C] text-[12px] flex gap-x-[6px] border-[1px] border-[#E0DEF7]"
+            >
               <PhoneFooter />
               +90 539 114 4525
-            </button>
-            <button className="px-4 md:px-[22px] py-[7px] rounded-[8px] text-[#00145C] text-[12px] flex gap-x-[6px] border-[1px] border-[#E0DEF7]">
+            </Link>
+            <Link
+              href="mailto:info@selectedglobal.com"
+              className="px-4 md:px-[22px] py-[7px] rounded-[8px] text-[#00145C] text-[12px] flex gap-x-[6px] border-[1px] border-[#E0DEF7]"
+            >
               <MailFooter />
               info@selectedglobal.com
-            </button>
+            </Link>
           </div>
+
           <div className="font-medium text-[12px] text-[#878787]">
             2024 Selected Global. All Rights Reserved
           </div>
