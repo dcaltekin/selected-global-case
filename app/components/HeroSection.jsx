@@ -84,9 +84,9 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className="container mx-auto mt-[24px] px-4 lg:px-0">
+    <div className="container mx-auto md:mt-[24px] ">
       <div className="flex flex-col">
-        <div className="flex justify-between order-last md:order-first">
+        <div className="flex justify-between order-last md:order-first px-4 lg:px-0">
           <h1 className="text-[#00145C] font-medium text-[24px] lg:text-[28px] -tracking-[1px]">
             2+1 For Rent in Sakarya, Famagusta
           </h1>
@@ -100,7 +100,7 @@ export default function HeroSection() {
           </div>
         </div>
         {/* for tablet */}
-        <div className="my-[24px] block lg:hidden">
+        <div className="mb-[24px] md:my-[24px] block lg:hidden px-0 md:px-4">
           <Swiper
             slidesPerView={1}
             pagination={{ clickable: true }}
@@ -131,20 +131,20 @@ export default function HeroSection() {
               </SwiperSlide>
             ))}
           </Swiper>
-
+          {/* Şimdilik slider kontrol butonu olarak aktif ettim. */}
           <button
             onClick={goToPreviousSlide}
-            className=" absolute z-[40] top-[148px] left-8 xs:left-20 flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]"
+            className=" absolute z-[40] top-[16px] left-4 xs:left-20 flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]"
           >
             <ArrowLeft />
           </button>
-          <button
+          {/* <button
             onClick={goToNextSlide}
-            className="absolute z-[40] top-[148px] left-16 xs:left-28 flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]"
+            className="absolute z-[40] top-[16px] left-12 xs:left-28 flex md:hidden items-center justify-center bg-white w-[26px] h-[26px] rounded-[8px]"
           >
             <ArrowRight />
-          </button>
-          <button className="flex md:hidden absolute top-[450px] right-8 xs:right-20  z-[40] bg-white rounded-[8px] w-[70px] justify-center text-[#00145C] text-[14px] -tracking-[4%] py-[6px] px-[27px]  gap-x-[6px] items-center">
+          </button> */}
+          <button className="flex md:hidden absolute top-[320px] right-8 xs:right-20  z-[40] bg-white rounded-[8px] w-[70px] justify-center text-[#00145C] text-[14px] -tracking-[4%] py-[6px] px-[27px]  gap-x-[6px] items-center">
             {currentSlide}/{imageData.length}
           </button>
           <button className="hidden md:flex absolute bottom-8 right-[17%] transform translate-x-[20%] z-40 bg-white rounded-[8px] w-[210px] justify-center text-[#00145C] text-[14px] -tracking-[4%] py-[9px] px-[27px]  gap-x-[6px] items-center">
@@ -161,7 +161,7 @@ export default function HeroSection() {
             width={imageData[0].width}
             height={imageData[0].height}
             alt={imageData[0].alt}
-            className="object-cover w-full h-[450px]"
+            className="object-cover w-full h-[450px] rounded-l-[8px]"
           />
         </div>
         <div className="col-span-3 grid gap-[4px]">
@@ -195,7 +195,7 @@ export default function HeroSection() {
           ))}
         </div>
       </div>
-      <div className="mt-[24px] flex flex-col md:flex-row justify-between">
+      <div className="mt-[24px] flex flex-col md:flex-row justify-between px-4 lg:px-0">
         <div className="font-medium">
           <div className="text-[#00145C] text-[20px]">Sakarya, Famagusta</div>
           <div className="mt-[6px] md:mt-[24px] text-[#6C727F]">
@@ -209,7 +209,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between">
+      <div className="flex flex-col md:flex-row justify-between px-4 lg:px-0">
         <div className="w-full md:w-[345px] lg:w-[540px]  mt-[29px] order-last md:order-first">
           <div className="bg-[#EFEFFB] w-full md:w-[345px] lg:w-[540px] h-[1.5px]"></div>
           <div className="py-[24px] grid grid-cols-2 xl:grid-cols-3 place-items-center gap-y-4">

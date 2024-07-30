@@ -39,8 +39,8 @@ export default function Navbar() {
     <div
       className={
         isOpen
-          ? "container mx-auto py-[20px] flex justify-between items-center px-4 lg:px-0 sticky top-0 z-[50]"
-          : "container mx-auto py-[20px] flex justify-between items-center px-4 lg:px-0"
+          ? "container mx-auto py-[20px] hidden md:flex justify-between items-center px-4 lg:px-0 sticky top-0 z-[50]"
+          : "container mx-auto py-[20px] hidden md:flex justify-between items-center px-4 lg:px-0"
       }
     >
       <Image
