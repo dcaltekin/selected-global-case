@@ -595,3 +595,55 @@ export function MailFooter() {
     </svg>
   );
 }
+
+export function ArrowRightSeeAll() {
+  return (
+    <svg
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_1_5758)">
+        <path
+          d="M5.98438 13.166L10.651 8.49935L5.98437 3.83268"
+          stroke="#00145C"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_1_5758">
+          <rect
+            width="16"
+            height="16"
+            fill="white"
+            transform="translate(0.3125 0.5)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function HeartProjects() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 17 16"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`transition-colors duration-300 ${
+        isFilled ? "fill-current text-blue-900" : "fill-none"
+      }`}
+    >
+      <path
+        d="M9.35087 13.8733C9.12421 13.9533 8.75087 13.9533 8.52421 13.8733C6.59087 13.2133 2.27087 10.46 2.27087 5.79335C2.27087 3.73335 3.93087 2.06668 5.97754 2.06668C7.19087 2.06668 8.26421 2.65335 8.93754 3.56001C9.61087 2.65335 10.6909 2.06668 11.8975 2.06668C13.9442 2.06668 15.6042 3.73335 15.6042 5.79335C15.6042 10.46 11.2842 13.2133 9.35087 13.8733Z"
+        stroke="#00145C"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+}
